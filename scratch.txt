@@ -1,0 +1,6 @@
+ConcourseCI commands ---------------------------------------------------------|
+
+fly -t ci login -c http://concourse.platform-engineering.com:8080 \
+  --team-name team11
+
+fly -t ci set-pipeline -p flightschooltest -c build.yml
